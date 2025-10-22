@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from "./nav.module.css";
 
 const tabs = [
   { id: "agenda", icon: "fa-calendar", label: "Agenda" },
@@ -10,11 +11,11 @@ const tabs = [
 
 const NavigationTabs = ({ activeTab, setActiveTab }) => {
   return (
-    <nav className="nav-tabs">
+    <nav className={Styles.navTabs}>
       {tabs.map((tab) => (
         <button
           key={tab.id}
-          className={`tab-button ${activeTab === tab.id ? "active" : ""}`}
+          className={`${Styles.tabButton} ${activeTab === tab.id ? Styles.active : ""}`}
           onClick={() => setActiveTab(tab.id)}
         >
           <i className={`fa-regular ${tab.icon}`}></i>

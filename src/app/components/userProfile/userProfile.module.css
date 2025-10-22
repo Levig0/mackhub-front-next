@@ -1,0 +1,39 @@
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.userProfile {
+  margin-top: 1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userProfileText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+
+.userProfileText h3{
+  font-weight: 600;
+  color: var(--main-text);
+}
+
+.userProfileText p{
+  font-weight: 200;
+  color: var(--gray-text);
+}

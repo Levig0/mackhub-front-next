@@ -1,12 +1,14 @@
 import React from "react";
 
+import Styles from './pacoteEstudos.module.css';
+
 const PacoteSection = () => (
-  <section className="content-section">
-    <div className="section-header">
+  <section className={Styles.contentSection}>
+    <div className={Styles.contentSection}>
       <i className="fa-regular fa-file-lines" style={{ color: "#b01c1c" }}></i>
       <h2>Pacote de estudos</h2>
     </div>
-    <div className="placeholder-box">Em breve</div>
+    <div className={Styles.placeHolder}>Em breve</div>
   </section>
 );
 
