@@ -6,7 +6,7 @@ function Button() {
   return (
 
 <button className={Styles.cta}>
-  <span>Configurar Agendamento</span>
+  <span>Configurar</span>
   <svg width="15px" height="10px" viewBox="0 0 13 10">
     <path d="M1,5 L11,5"></path>
     <polyline points="8 1 12 5 8 9"></polyline>
