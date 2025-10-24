@@ -1,37 +1,35 @@
-
-
 .tabWrapper {
   margin-top: 1rem;
 }
 
-.tabNav {
-  max-width: 1120px;
+.navTabs {
+  display: flex;
+  width: 98vw;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .tabContainer {
   background-color: #f3f5f7;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   width: 100%;
   display: flex;
   gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  justify-content: space-between;
 }
 
 .tabButton {
-  flex-shrink: 0;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  height: 2.5rem;
+  height: 1.9rem;
+  width: 100%;
+  text-align: center;
   border-radius: 0.5rem;
   border: 1px solid transparent;
   color: #4b5563;
   background-color: transparent;
-  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -39,13 +37,9 @@
   color: #1f2937;
 }
 
-.tabButton:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
-}
 
 .tabButton.active {
-  border-color: var(--primary);
-  color: var(--primary);
+  background-color: white;
+  color: black;
   font-weight: 600;
 }

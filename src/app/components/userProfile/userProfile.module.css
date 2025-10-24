@@ -14,7 +14,7 @@
 }
 
 .userProfile {
-  margin-top: 1rem; 
+  margin-top: 3rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -34,6 +34,7 @@
 }
 
 .userProfileText p{
+  margin-top: -10px;
   font-weight: 200;
   color: var(--gray-text);
 }

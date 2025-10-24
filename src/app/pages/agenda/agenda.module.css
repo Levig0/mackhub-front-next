@@ -1,7 +1,16 @@
+.contentSection{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 .agendaHeader {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.75rem;
+  
+  margin-top: 40px;
 }
 
 @media (min-width: 640px) {
@@ -16,14 +25,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
-}
-
-@media (min-width: 640px) {
-  .agendaTitle {
-    font-size: 1.5rem;
-  }
 }
 
 .lembreteButton {
@@ -37,6 +40,7 @@
   font-weight: 300;
   justify-content: center;
   width: 100%;
+  text-decoration: none;
 }
 
 @media (min-width: 640px) {
@@ -63,3 +67,109 @@
   }
 }
 
+.agendaGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.agendaCard {
+  width: 90%;
+  border: 1px solid rgba(176, 28, 28, 0.8); 
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  min-height: 128px;
+  background-color: white; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+.cardContent > *:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  flex-wrap: wrap;
+}
+
+.cardTitle {
+  font-weight: 700; /* font-bold */
+  font-size: 1rem; /* text-base */
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .cardTitle {
+    font-size: 1.125rem; 
+  }
+}
+
+.cardTipo {
+  border-radius: 9999px;
+  padding: 2px 8px; 
+  color: white; 
+  font-weight: 500;
+  font-size: 0.75rem; 
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .cardTipo {
+    font-size: 0.875rem; 
+  }
+}
+
+.cardComponente {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.cardData {
+  color: #6b7280;
+  font-size: 0.875rem;
+  display: block; 
+}
+
+.cardActions {
+  padding-top: 0.75rem; /* pt-3 */
+}
+
+.cardButton {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px; 
+  border: 1px solid #d1d5db; 
+  font-weight: 500;
+  font-size: 0.875rem; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.cardButton:hover {
+  border-color: #B01C1C; 
+}
+
+@media (min-width: 640px) {
+  .cardButton {
+    width: auto;
+  }
+}
+
+.agendaTitle h2 {
+    margin: 0;
+}
