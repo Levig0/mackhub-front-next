@@ -1,6 +1,19 @@
-.placeHolder {
-  margin-top: 1rem;
-  border: 1px solid rgba(176, 28, 28, 0.3);
-  border-radius: 0.5rem;
-  padding: 1rem;
+.contentSection{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.PacoteEstudosContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pacoteCard{
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px;
 }
