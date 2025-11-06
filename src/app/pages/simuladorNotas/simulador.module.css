@@ -1,3 +1,7 @@
+.contentSection{
+  width: 100%;
+}
+
 .simuladorForm {
   margin-top: 1rem;
   display: grid;
