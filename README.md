@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+##🧠 Ideação e Protótipos
+Este projeto surgiu da necessidade de criar uma plataforma acadêmica moderna e escalável para a comunidade Mackenzie. A proposta inicial envolvia:
 
-## Getting Started
+- Interface intuitiva para alunos e professores
 
-First, run the development server:
+- Integração com sistemas internos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Facilidade de manutenção e evolução
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Protótipos foram desenvolvidos no Figma, focando em usabilidade e acessibilidade.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+##🌱 Abordagem Extensionista
+A construção do projeto seguiu uma abordagem extensionista, ou seja, voltada para impacto social e educacional. O objetivo é que o sistema seja útil não apenas para fins acadêmicos, mas também como ferramenta de aprendizado para estudantes de tecnologia, permitindo que contribuam com código, documentação e testes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##⚛️ Vantagens da Migração para Componentes ReactJS
+- A escolha por ReactJS trouxe diversos benefícios:
 
-## Learn More
+- Reutilização de componentes: facilita manutenção e consistência visual
 
-To learn more about Next.js, take a look at the following resources:
+- Melhor performance: renderização eficiente com Virtual DOM
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Ecossistema rico: integração com bibliotecas como Next.js, Tailwind, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Facilidade de testes: componentes isolados são mais fáceis de testar
 
-## Deploy on Vercel
+##💻 Trechos de Código Comentados
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###jsx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###js
+
+##🚀 Como Rodar o Projeto
+Instale as dependências:
+
+1. npm install
+2. npm run dev
+3. Acesse http://localhost:3000
+
+##📚 Aprendizados
+Durante o desenvolvimento, aprendemos:
+
+- A importância de uma arquitetura modular
+
+- Boas práticas com ESLint e estrutura de projeto
+
+- Otimização de fontes com next/font
+
+- Uso de aliases com jsconfig.json para facilitar imports (@/ → src/)
