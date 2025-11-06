@@ -37,6 +37,7 @@ Instale as dependências:
 3. Acesse http://localhost:3000
 
 ##📚 Aprendizados
+
 Durante o desenvolvimento, aprendemos:
 
 - A importância de uma arquitetura modular
