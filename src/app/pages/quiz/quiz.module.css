@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-top: 40px;
 }
 
 @media (min-width: 640px) {

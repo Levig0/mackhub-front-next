@@ -1,19 +1,95 @@
-.contentSection{
+.contentSection {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.PacoteEstudosContainer{
+.tituloContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.progressBarWrapper {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #b01c1c;
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.PacoteEstudosContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.pacoteCard{
-  border: 1px solid #ccc;
+.pacoteDetails {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pacoteIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: #b01c1c;
+  border-radius: 12px;
+}
+
+.pacoteCard {
+  border: 1px solid #e2e5e7;
   display: flex;
   justify-content: space-between;
   border-radius: 8px;
   margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.pacoteStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+
+.pacoteDescription {
+  font-size: 14px;
+  margin-top: -5px;
+  color: #6b7280;
+  font-weight: 300;
+}
+
+.section-header{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }

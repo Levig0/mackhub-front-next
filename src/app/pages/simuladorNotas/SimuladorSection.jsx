@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 import Styles from './simulador.module.css';
+import { CiCalculator1 } from "react-icons/ci";
+
 
 const SimuladorSection = () => {
   const [resultado, setResultado] = useState(null);
@@ -20,8 +22,8 @@ const SimuladorSection = () => {
 
   return (
     <section className={Styles.contentSection}>
-      <div className="section-header">
-        <i className="fa-solid fa-calculator" style={{ color: "#b01c1c" }}></i>
+      <div className={Styles.sectionHeader}>
+        <i className="fa-solid fa-calculator" style={{ color: "#b01c1c" }}><CiCalculator1 /></i>
         <h2>Simulador de nota</h2>
       </div>
       <form onSubmit={calcularNota} className={Styles.simuladorForm}>
