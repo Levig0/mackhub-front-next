@@ -3,7 +3,6 @@ import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
-
 import Link from "next/link";
 import Styles from './pacoteEstudos.module.css';
 
@@ -22,6 +21,7 @@ const PacoteSection = () => {
 
   return (
     <section className={Styles.contentSection}>
+
       <div className={Styles.tituloContainer}>
         <i className="fa-regular fa-file-lines" style={{ color: "#b01c1c" }}></i>
         <h2>Pacote de estudos</h2>
@@ -49,8 +49,11 @@ const PacoteSection = () => {
           <Link key={pacote.id} href={pacote.link} className={Styles.pacoteCard}>
             <div className={Styles.pacoteDetails}>
               <div className={Styles.pacoteIcon}>
-                <i className="fa-regular fa-file-lines" style={{ color: "#b01c1c", fontSize: "24px" }}><IoDocumentTextOutline color="#fff" /></i>
+                <i className="fa-regular fa-file-lines" style={{ color: "#b01c1c", fontSize: "24px" }}>
+                  <IoDocumentTextOutline color="#fff" />
+                </i>
               </div>
+
               <div className={Styles.pacoteInfo}>
                 <h3 className={Styles.pacoteTitle}>{pacote.titulo}</h3>
                 <p className={Styles.pacoteDescription}>{pacote.descricao}</p>
@@ -59,7 +62,9 @@ const PacoteSection = () => {
 
             <div className={Styles.pacoteStatus}>
               {pacote.status ? (
-                <span className={Styles.statusCompleted}><IoMdCheckmarkCircleOutline color="#00FF00" size="24" /></span>
+                <span className={Styles.statusCompleted}>
+                  <IoMdCheckmarkCircleOutline color="#00FF00" size="24" />
+                </span>
               ) : (
                 <span className={Styles.statusPending}></span>
               )}
@@ -67,6 +72,7 @@ const PacoteSection = () => {
           </Link>
         ))}
       </div>
+
     </section>
   );
 };

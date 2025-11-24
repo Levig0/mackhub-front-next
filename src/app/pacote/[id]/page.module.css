@@ -1,0 +1,79 @@
+.container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #222;
+}
+
+.header {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.header h1 {
+  margin: 10px 0 0 0;
+  font-size: 28px;
+  color: #b01c1c;
+}
+
+.header p {
+  font-size: 16px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.icon {
+  background: #ffe5e5;
+  padding: 12px;
+  width: fit-content;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.infoBox,
+.contentBox,
+.downloadBox {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.infoBox h2,
+.contentBox h2,
+.downloadBox h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #b01c1c;
+}
+
+.infoBox ul,
+.contentBox ul {
+  margin-left: 15px;
+}
+
+.infoBox li,
+.contentBox li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.downloadBtn {
+  background: #b01c1c;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.downloadBtn:hover {
+  background: #8c1717;
+}

@@ -6,11 +6,11 @@ import React, { useState } from "react";
 import Header from "./components/header/Header";
 import UserProfile from "./components/userProfile/UserProfile";
 import NavigationTabs from "./components/navbar/NavigationTabs";
-import AgendaSection from "./pages/agenda/AgendaSection";
-import PacoteSection from "./pages/pacoteEstudos/PacoteSection";
-import CardsSection from "./pages/cards/CardsSection";
-import QuizSection from "./pages/quiz/QuizSection";
-import SimuladorSection from "./pages/simuladorNotas/SimuladorSection";
+import AgendaSection from "./agenda/AgendaSection";
+import PacoteSection from "./pacoteEstudos/PacoteSection";
+import CardsSection from "./cards/CardsSection";
+import QuizSection from "./quiz/QuizSection";
+import SimuladorSection from "./simuladorNotas/SimuladorSection";
 
 
 export default function Home() {
