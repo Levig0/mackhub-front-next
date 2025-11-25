@@ -1,95 +1,107 @@
+/* Container principal da seção, usa flexbox em coluna ocupando toda a largura */
 .contentSection {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  display: flex; /* Ativa o layout flex */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  width: 100%; /* Ocupa toda a largura */
 }
 
+/* Container do título com ícone e texto */
 .tituloContainer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  display: flex; /* Flex para alinhar os elementos */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre os itens */
+  margin-bottom: 10px; /* Espaço abaixo do título */
 }
 
+/* Wrapper da barra de progresso */
 .progressBarWrapper {
-  width: 100%;
-  padding: 0 10px;
-  margin-bottom: 20px;
+  width: 100%; /* Largura total */
+  padding: 0 10px; /* Espaçamento lateral */
+  margin-bottom: 20px; /* Espaço inferior */
 }
 
+/* Cabeçalho que mostra progresso (% e texto) */
 .progressHeader {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #374151;
+  display: flex; /* Flex para espaçar elementos */
+  justify-content: space-between; /* Um para cada lado */
+  margin-bottom: 5px; /* Espaço abaixo */
+  font-size: 14px; /* Tamanho da fonte */
+  color: #374151; /* Cor do texto */
 }
 
+/* Barra de fundo da barra de progresso */
 .progressBar {
-  height: 10px;
-  background-color: #e5e7eb;
-  border-radius: 5px;
-  overflow: hidden;
+  height: 10px; /* Altura da barra */
+  background-color: #e5e7eb; /* Cor de fundo */
+  border-radius: 5px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassar */
 }
 
+/* Preenchimento da barra de progresso (parte que aumenta) */
 .progressFill {
-  height: 100%;
-  background-color: #b01c1c;
-  transition: width 0.5s ease-in-out;
-  border-radius: 5px;
+  height: 100%; /* Preenche toda a altura */
+  background-color: #b01c1c; /* Cor da barra preenchida */
+  transition: width 0.5s ease-in-out; /* Animação suave da largura */
+  border-radius: 5px; /* Mantém as bordas arredondadas */
 }
 
+/* Container principal da lista de pacotes */
 .PacoteEstudosContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Coluna */
+  width: 100%; /* Largura total */
 }
 
+/* Área com o ícone e texto do pacote */
 .pacoteDetails {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex; /* Layout flex */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre itens */
 }
 
+/* Ícone quadrado com fundo vermelho */
 .pacoteIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  background-color: #b01c1c;
-  border-radius: 12px;
+  display: flex; /* Flex para centralizar ícone interno */
+  justify-content: center; /* Centraliza horizontal */
+  align-items: center; /* Centraliza vertical */
+  width: 50px; /* Largura */
+  height: 50px; /* Altura */
+  margin: 10px; /* Espaço externo */
+  background-color: #b01c1c; /* Cor do fundo */
+  border-radius: 12px; /* Bordas arredondadas */
 }
 
+/* Card do pacote de estudos */
 .pacoteCard {
-  border: 1px solid #e2e5e7;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 8px;
-  margin: 10px;
-  text-decoration: none;
-  color: black;
+  border: 1px solid #e2e5e7; /* Borda leve */
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Ícones/textos nas extremidades */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin: 10px; /* Espaço externo */
+  text-decoration: none; /* Remove sublinhado */
+  color: black; /* Cor do texto */
 }
 
+/* Status do pacote (ex: completo, pendente) */
 .pacoteStatus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
+  display: flex; /* Flex */
+  justify-content: center; /* Centraliza horizontal */
+  align-items: center; /* Centraliza vertical */
+  width: 150px; /* Largura fixa */
 }
 
-
+/* Descrição do pacote */
 .pacoteDescription {
-  font-size: 14px;
-  margin-top: -5px;
-  color: #6b7280;
-  font-weight: 300;
+  font-size: 14px; /* Tamanho da fonte */
+  margin-top: -5px; /* Ajuste fino de posição */
+  color: #6b7280; /* Cor do texto */
+  font-weight: 300; /* Peso leve */
 }
 
-.section-header{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+/* Cabeçalho padrão de uma seção */
+.section-header {
+  display: flex; /* Flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 0.5rem; /* Espaçamento entre itens */
+  margin-bottom: 1rem; /* Espaço abaixo */
 }

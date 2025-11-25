@@ -1,39 +1,45 @@
+/* Container geral da página */
 .container {
-  padding: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  color: #222;
+  padding: 40px;              /* Espaçamento interno */
+  max-width: 900px;           /* Largura máxima */
+  margin: 0 auto;             /* Centraliza horizontalmente */
+  color: #222;                /* Cor padrão do texto */
 }
 
+/* Cabeçalho do pacote */
 .header {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin-bottom: 30px;
-  text-align: left;
+  background: #fff;           /* Fundo branco */
+  padding: 30px;              /* Espaçamento interno */
+  border-radius: 12px;        /* Arredondamento dos cantos */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave */
+  margin-bottom: 30px;        /* Espaço abaixo */
+  text-align: left;           /* Alinhamento do texto */
 }
 
+/* Título dentro do header */
 .header h1 {
-  margin: 10px 0 0 0;
-  font-size: 28px;
-  color: #b01c1c;
+  margin: 10px 0 0 0;         /* Espaços ao redor */
+  font-size: 28px;            /* Tamanho da fonte */
+  color: #b01c1c;             /* Cor vermelha do tema */
 }
 
+/* Descrição pequena abaixo do título */
 .header p {
   font-size: 16px;
   margin-top: 5px;
-  opacity: 0.8;
+  opacity: 0.8;               /* Mais suave */
 }
 
+/* Wrapper do ícone do cabeçalho */
 .icon {
-  background: #ffe5e5;
-  padding: 12px;
-  width: fit-content;
+  background: #ffe5e5;        /* Fundo rosado */
+  padding: 12px;              /* Espaçamento interno */
+  width: fit-content;         /* Só ocupa o necessário */
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
+/* Caixas de informações, conteúdo e download — seguem o mesmo estilo */
 .infoBox,
 .contentBox,
 .downloadBox {
@@ -44,6 +50,7 @@
   margin-bottom: 25px;
 }
 
+/* Título das seções internas */
 .infoBox h2,
 .contentBox h2,
 .downloadBox h2 {
@@ -52,28 +59,32 @@
   color: #b01c1c;
 }
 
+/* Listas dentro das boxes */
 .infoBox ul,
 .contentBox ul {
-  margin-left: 15px;
+  margin-left: 15px;          /* Recuo da lista */
 }
 
+/* Itens das listas */
 .infoBox li,
 .contentBox li {
   margin-bottom: 5px;
   font-size: 16px;
 }
 
+/* Botão de download */
 .downloadBtn {
-  background: #b01c1c;
+  background: #b01c1c;        /* Cor principal */
   border: none;
   padding: 14px 22px;
   border-radius: 8px;
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s;           /* Animação suave no hover */
 }
 
+/* Estado hover do botão */
 .downloadBtn:hover {
-  background: #8c1717;
+  background: #8c1717;        /* Tom mais escuro ao passar o mouse */
 }

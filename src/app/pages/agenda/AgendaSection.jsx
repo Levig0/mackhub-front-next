@@ -1,16 +1,10 @@
-// Importa o arquivo de estilos CSS modularizado
 import Styles from './agenda.module.css';
-
-// Importa o componente Link do Next.js para navegação
 import Link from 'next/link';
+import { FaRegCalendar, FaRegBell   } from "react-icons/fa";
 
-// Importa ícones da biblioteca react-icons
-import { FaRegCalendar, FaRegBell } from "react-icons/fa";
 
-// Componente principal da seção de Agenda
 const AgendaSection = () => {
 
-  // Lista de eventos da agenda acadêmica
   const eventosAgenda = [
     { id: 1, titulo: "Prova de Java", tipo: "Prova", componente: "S.I - Programação de Sistemas I", data: "09/12/2025 às 21:10" },
     { id: 2, titulo: "Trabalho de Web Mobile", tipo: "Entrega", componente: "S.I - Web Mobile", data: "15/12/2025 às 23:59" },
@@ -21,62 +15,39 @@ const AgendaSection = () => {
   ];
 
   return (
-    // Seção principal com o estilo do módulo CSS
     <section className={Styles.contentSection}>
-      
-      {/* Header da seção de agenda */}
       <div className={Styles.agendaHeader}>
-        
-        {/* Título "Agenda Acadêmica" com ícone */}
         <div className={Styles.agendaTitle}>
           <FaRegCalendar style={{ color: "#b01c1c" }}/>
           <h2> Agenda Acadêmica</h2>
         </div>
-
-        {/* Botão para configurar lembretes */}
         <div>
-          <Link className={Styles.lembreteButton} href="/">
-            <FaRegBell />Configurar lembretes
-          </Link>
+          <Link className={Styles.lembreteButton} href="/"><FaRegBell  />Configurar lembretes</Link>
         </div>
       </div>
-
-      {/* Grid onde os cards da agenda serão exibidos */}
       <div id={Styles.agenda} className={Styles.agendaGrid}>
-
-        {/* Mapeamento dos eventos para gerar os cards dinamicamente */}
         {eventosAgenda.map((evento, index) => (
-          
-          // Card individual de evento
           <article key={index} className={Styles.agendaCard}>
-            
-            {/* Conteúdo principal do card */}
             <div className={Styles.cardContent}>
               
-              {/* Cabeçalho do card: título + tipo */}
               <div className={Styles.cardHeader}>
                 <h3 className={Styles.cardTitle}>{evento.titulo}</h3>
-
-                {/* Exibe o tipo do evento (Prova, Entrega, Aula etc.) */}
-                <span className={Styles.cardTipo}>
+                <span 
+                  className={Styles.cardTipo} 
+                >
                   {evento.tipo}
                 </span>
               </div>
-
-              {/* Nome do componente curricular */}
+              
               <p className={Styles.cardComponente}>{evento.componente}</p>
               
-              {/* Data do evento */}
               <span className={Styles.cardData}>{evento.data}</span>
             </div>
-
-            {/* Botão de ação do card */}
             <div className={Styles.cardActions}>
               <button className={Styles.cardButton}>
                 <FaRegBell /><span>Lembrete</span>
               </button>
             </div>
-
           </article>
         ))}
       </div>
@@ -84,5 +55,4 @@ const AgendaSection = () => {
   );
 };
 
-// Exporta o componente para uso em outras partes do projeto
 export default AgendaSection;

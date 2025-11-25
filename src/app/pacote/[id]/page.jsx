@@ -1,6 +1,10 @@
+// Importa os estilos da página
 import Styles from "./page.module.css";
+
+// Importa o ícone de documento da biblioteca react-icons
 import { IoDocumentTextOutline } from "react-icons/io5";
 
+// Objeto que contém todos os pacotes/capítulos disponíveis
 const pacotes = {
   1: {
     titulo: "Álgebra Linear - Capítulo 1",
@@ -59,24 +63,30 @@ const pacotes = {
   },
 };
 
+// Página dinâmica que recebe o parâmetro `id` vindo da rota
 export default function PacotePage({ params }) {
-  const { id } = params;
-  const pacote = pacotes[id];
+  const { id } = params; // Extrai o id da rota
+  const pacote = pacotes[id]; // Busca o pacote correspondente pelo id
 
+  // Caso o pacote não exista, retorna uma mensagem
   if (!pacote) {
     return <h1 style={{ padding: "20px" }}>Pacote não encontrado.</h1>;
   }
 
+  // Renderização da página do pacote
   return (
     <div className={Styles.container}>
+      
+      {/* Cabeçalho da página */}
       <header className={Styles.header}>
         <div className={Styles.icon}>
           <IoDocumentTextOutline size={32} color="#b01c1c" />
         </div>
-        <h1>{pacote.titulo}</h1>
+        <h1>{pacote.titulo}</h1> 
         <p>{pacote.descricao}</p>
       </header>
 
+      {/* Box com informações gerais do capítulo */}
       <section className={Styles.infoBox}>
         <h2>📘 Informações do capítulo</h2>
         <ul>
@@ -86,21 +96,24 @@ export default function PacotePage({ params }) {
         </ul>
       </section>
 
+      {/* Box com o conteúdo listado */}
       <section className={Styles.contentBox}>
         <h2>📚 Conteúdo abordado</h2>
         <ul>
           {pacote.conteudo.map((item, index) => (
-            <li key={index}>• {item}</li>
+            <li key={index}>• {item}</li> // Renderiza cada item do conteúdo
           ))}
         </ul>
       </section>
 
+      {/* Seção de download */}
       <section className={Styles.downloadBox}>
         <h2>📄 Baixar capítulo</h2>
         <button className={Styles.downloadBtn}>
           Baixar PDF
         </button>
       </section>
+
     </div>
   );
 }

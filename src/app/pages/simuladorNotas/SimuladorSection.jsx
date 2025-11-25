@@ -1,47 +1,29 @@
 import React, { useState } from "react";
 
-/* Importa o arquivo CSS modular do componente */
 import Styles from './simulador.module.css';
 
-/* Ícone da calculadora */
-import { CiCalculator1 } from "react-icons/ci";
-
-
 const SimuladorSection = () => {
-  /* Estado para armazenar o resultado da simulação */
   const [resultado, setResultado] = useState(null);
 
-  /* Função executada ao enviar o formulário */
   const calcularNota = (e) => {
-    e.preventDefault();               // Impede o recarregamento da página
-
-    /* Obtém e converte os valores digitados */
+    e.preventDefault();
     const n1 = parseFloat(e.target.n1.value);
     const p1 = parseFloat(e.target.p1.value);
     const n2 = parseFloat(e.target.n2.value);
     const p2 = parseFloat(e.target.p2.value);
 
-    /* Soma dos pesos */
     const totalPeso = p1 + p2;
-
-    /* Cálculo da média ponderada */
     const media = (n1 * p1 + n2 * p2) / totalPeso;
 
-    /* Armazena no estado para exibição */
     setResultado(`Média ponderada: ${media.toFixed(2)}`);
   };
 
   return (
     <section className={Styles.contentSection}>
-      {/* Cabeçalho da seção */}
-      <div className={Styles.sectionHeader}>
-        <i className="fa-solid fa-calculator" style={{ color: "#b01c1c" }}>
-          <CiCalculator1 />
-        </i>
+      <div className="section-header">
+        <i className="fa-solid fa-calculator" style={{ color: "#b01c1c" }}></i>
         <h2>Simulador de nota</h2>
       </div>
-
-      {/* Formulário do simulador */}
       <form onSubmit={calcularNota} className={Styles.simuladorForm}>
         <input name="n1" type="number" step="0.01" placeholder="Nota 1" />
         <input name="p1" type="number" step="0.01" placeholder="Peso 1" />
@@ -49,8 +31,6 @@ const SimuladorSection = () => {
         <input name="p2" type="number" step="0.01" placeholder="Peso 2" />
         <button type="submit">Calcular</button>
       </form>
-
-      {/* Exibe o resultado somente se existir */}
       {resultado && <div className={Styles.resultado}>{resultado}</div>}
     </section>
   );

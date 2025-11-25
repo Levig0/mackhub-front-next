@@ -1,7 +1,9 @@
+/* Container principal da seção de cards */
 .cardsSectionContainer {
     width: 100%;
 }
 
+/* Container que junta o cabeçalho e o botão de novo cartão */
 .headerAndButtonContainer {
     display: flex;
     justify-content: space-between;
@@ -11,29 +13,34 @@
     border-bottom: 1px solid #ddd;
 }
 
+/* Seção do cabeçalho (título e subtítulo) */
 .sectionHeader {
     display: flex;
     flex-direction: column;
 }
 
+/* Agrupamento do ícone com o título */
 .titleGroup {
     display: flex;
     gap: 10px;
     margin-bottom: 5px;
 }
 
+/* Estilização do título h2 */
 .titleGroup h2 {
     font-size: 1.8em;
     color: #333;
     margin: 0;
 }
 
+/* Subtítulo abaixo do título principal */
 .sectionSubHeader {
     font-size: 0.9em;
     color: #666;
     margin: 0;
 }
 
+/* Botão principal — “Novo Cartão” */
 .primaryButton {
     background-color: #b01c1c;
     color: white;
@@ -48,10 +55,12 @@
     transition: background-color 0.2s;
 }
 
+/* Hover do botão principal */
 .primaryButton:hover {
     background-color: #8c1616;
 }
 
+/* Botão do placeholder — “Crie seu primeiro Flashcard” */
 .placeholderButton {
     background-color: transparent;
     color: #b01c1c;
@@ -64,11 +73,13 @@
     transition: all 0.2s;
 }
 
+/* Hover do botão do placeholder */
 .placeholderButton:hover {
     background-color: #b01c1c;
     color: white;
 }
 
+/* Container exibido quando não há nenhum flashcard */
 .placeHolder {
     display: flex;
     flex-direction: column;
@@ -82,6 +93,7 @@
     padding: 40px;
 }
 
+/* Título dentro do placeholder */
 .placeHolder h1 {
     font-size: 1.5em;
     color: #333;
@@ -89,12 +101,14 @@
     margin-bottom: 5px;
 }
 
+/* Parágrafo do placeholder */
 .placeHolder p {
     color: #666;
     max-width: 400px;
     line-height: 1.5;
 }
 
+/* Wrapper do ícone central do placeholder */
 .iconWrapper {
     line-height: 1;
     background-color: #8c161679;

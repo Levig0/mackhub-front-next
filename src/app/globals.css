@@ -1,17 +1,19 @@
-
 :root {
-  --primary: #B01C1C;
-  --gray-text: #6B7280;
-  --main-text: #282C34;
-  --border: #dad1d1;
-  --input-border: #e4dcdc;
+  /* Variáveis globais de cor */
+  --primary: #B01C1C;      /* Cor principal (vermelho) */
+  --gray-text: #6B7280;    /* Cinza para textos secundários */
+  --main-text: #282C34;    /* Cor padrão do texto */
+  --border: #dad1d1;       /* Cor para bordas gerais */
+  --input-border: #e4dcdc; /* Cor para bordas de inputs */
 }
 
 
 body {
-  color: var(--main-text);
-  background-color: white;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  /* Estilização global do body */
+  color: var(--main-text);      /* Cor padrão do texto */
+  background-color: white;      /* Fundo branco */
+  font-family: sans-serif;      /* Fonte padrão simples */
+  margin: 0;                    /* Remove margens padrão */
+  padding: 0;                   /* Remove espaçamentos padrão */
 }
+

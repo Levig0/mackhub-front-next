@@ -1,56 +1,65 @@
+/* Container geral da seção */
 .contentSection{
   width: 100%;
 }
 
+/* Formulário do simulador, usa grid */
 .simuladorForm {
-  margin-top: 1rem;
-  display: grid;
-  gap: 0.75rem;
+  margin-top: 1rem;           /* Espaço acima */
+  display: grid;              /* Layout em grid */
+  gap: 0.75rem;               /* Espaço entre os itens */
 }
 
+/* A partir de 640px, o grid terá 2 colunas */
 @media (min-width: 640px) {
   .simuladorForm {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* A partir de 1024px, o grid terá 4 colunas */
 @media (min-width: 1024px) {
   .simuladorForm {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
+/* Estilos dos inputs do formulário */
 .simuladorForm input {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.5rem;            /* Espaçamento interno */
+  border-radius: 0.5rem;      /* Bordas arredondadas */
+  border: 1px solid #ccc;     /* Borda cinza */
 }
 
+/* Botão do formulário */
 .simuladorForm button {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  grid-column: span 2;
-  cursor: pointer;
-  border: none;
+  background-color: var(--primary); /* Usa a cor primária do tema */
+  color: white;                     /* Texto branco */
+  padding: 0.5rem;                  /* Espaçamento interno */
+  border-radius: 0.5rem;            /* Bordas arredondadas */
+  grid-column: span 2;              /* Ocupa 2 colunas no grid */
+  cursor: pointer;                  /* Cursor de clique */
+  border: none;                     /* Sem borda */
 }
 
+/* Em telas maiores, botão ocupa todas as 4 colunas */
 @media (min-width: 1024px) {
   .simuladorForm button {
     grid-column: span 4;
   }
 }
 
+/* Área de resultado do simulador */
 #simRes {
-  margin-top: 0.75rem;
-  font-size: 1.125rem;
-  font-weight: 600;
+  margin-top: 0.75rem;        /* Espaço acima */
+  font-size: 1.125rem;        /* Tamanho da fonte */
+  font-weight: 600;           /* Semibold */
 }
 
+/* Estilo do header da seção */
 .sectionHeader{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  display: flex;              /* Layout flexível */
+  align-items: center;        /* Centraliza verticalmente */
+  gap: 0.5rem;                /* Espaço entre elementos */
+  margin-bottom: 1rem;        /* Espaço abaixo */
 }

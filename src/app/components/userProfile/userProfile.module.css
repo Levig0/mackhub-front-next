@@ -1,14 +1,13 @@
-
+/* Estilo da imagem de avatar: tamanho fixo, transição suave e formato circular */
 .avatar {
   width: 64px;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease; /* Suaviza a troca de avatar */
   height: 64px;
-  border-radius: 9999px;
-  object-fit: cover;
+  border-radius: 9999px; /* Garante círculo perfeito */
+  object-fit: cover; /* Mantém proporção e corta sem distorcer */
 }
 
-
-
+/* Aumenta o avatar em telas médias para cima (responsividade) */
 @media (min-width: 640px) {
   .avatar {
     width: 80px;
@@ -16,28 +15,32 @@
   }
 }
 
+/* Container principal do perfil do usuário */
 .userProfile {
-  margin-top: 3rem; 
+  margin-top: 3rem; /* Afasta do topo */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Avatar em cima e texto abaixo */
+  align-items: center; /* Centraliza tudo horizontalmente */
 }
 
+/* Wrapper do texto do usuário */
 .userProfileText {
-  text-align: center;
+  text-align: center; /* Alinha nome e email ao centro */
   display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
+  flex-direction: column; /* Nome e email empilhados */
+  margin-bottom: 3rem; /* Espaço inferior */
 }
 
-
-.userProfileText h3{
-  font-weight: 600;
-  color: var(--main-text);
+/* Nome do usuário: destaque maior */
+.userProfileText h3 {
+  font-weight: 600; /* Peso médio-forte */
+  color: var(--main-text); /* Usa variável global de cor */
 }
 
-.userProfileText p{
-  margin-top: -10px;
-  font-weight: 200;
-  color: var(--gray-text);
+/* Email e curso: estilo mais leve */
+.userProfileText p {
+  margin-top: -10px; /* Aproxima do título (cuidado, é negativo) */
+  font-weight: 200; /* Texto leve */
+  color: var(--gray-text); /* Cor secundária */
 }
+
